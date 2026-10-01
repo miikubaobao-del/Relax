@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Never Mind</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scene"></div>
+
+  <div class="animal-overlay animal-1"></div>
+  <div class="animal-overlay animal-2"></div>
+  <div class="animal-overlay animal-3"></div>
+  <div class="animal-overlay animal-4"></div>
+  <div class="animal-overlay animal-5"></div>
+
+  <div id="threeLayer" class="three-layer"></div>
+
+  <main class="ui">
+    <section class="composer">
+      <div
+        id="editor"
+        class="editor"
+        contenteditable="true"
+        spellcheck="false"
+        data-placeholder="Type here..."
+        aria-label="Type here"
+      ></div>
+
+      <button id="sendButton" class="send-button" type="button" aria-label="Send">
+        ↗
+      </button>
+    </section>
+  </main>
+
+  <div id="textMorphLayer" class="text-morph-layer" aria-hidden="true"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="scene.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
